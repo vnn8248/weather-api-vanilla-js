@@ -16,11 +16,11 @@ class UI {
 
         this.location.textContent = weather.name;
         // this.desc.textContent = desc;
-        this.string.textContent = `${weather.main.temp} F`;
+        this.string.textContent = `${weather.main.temp.toFixed(0)} F`;
         this.icon.setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);       
         this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
-        this.feelsLike.textContent = `Feels like: ${weather.main.feels_like} F`;
-        this.wind.textContent = `Wind Speed: ${weather.wind.speed} mph`;
+        this.feelsLike.textContent = `Feels like: ${weather.main.feels_like.toFixed(0)} F`;
+        this.wind.textContent = `Wind Speed: ${weather.wind.speed.toFixed(0)} mph`;
     }
 
 }

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", getWeather);
 // Change location event
 document.getElementById("w-change-btn").addEventListener("click", changeLocation);
 
-function changeLocation(e) {
+function changeLocation() {
     const zip = document.getElementById("zip").value;
 
     // Change location
